@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="WIRE 2: OPPORTUNITY" icon-name="standard: opportunity">
+        <div class="slds-var-m-around_medium">
+            <strong >total {stageType} Opportunities: {total} </strong>
+            <lightning-datatable
+            key-field="Id"
+            data={opps}
+            columns={columns}>
+
+            </lightning-datatable>
+
+
+        </div>
+
+    </lightning-card>
+</template>

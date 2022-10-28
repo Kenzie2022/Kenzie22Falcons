@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="IMPERATIVE APEX: BLOG"
+    icon-name="utility:edit_form">
+    <div class="slds-var-m-around_medium">
+        <lightning-button
+        label="All Blogs"
+        variant="success"
+        onclick={fetchBlogs}>
+        </lightning-button>
+        <div class="slds-var-m-top_small">
+            <template if:true={blogs}></template>
+            <lightning-datatable
+            key-field="Id"
+            data={blogs}
+            columns={columns}>
+            >
+                
+            </lightning-datatable>
+            <template if:true={error}>{error}</template>
+
+        </div>
+
+    </div>
+
+    </lightning-card>
+    
+</template>

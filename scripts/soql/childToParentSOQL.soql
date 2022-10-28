@@ -1,0 +1,5 @@
+SELECT Name, account.Name, account.industry FROM contact WHERE account.industry = 'Energy'
+
+Select id, name, Subject__c, Priority__c, Salesforce_Project__r.Project_Name__c, Salesforce_Project__r.status__c FROM Salesforce_Ticket__c
+
+select id, name, (select lastname, firstname from contacts) from account

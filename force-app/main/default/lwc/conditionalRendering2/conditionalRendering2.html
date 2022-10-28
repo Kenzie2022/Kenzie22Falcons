@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="CONDITIONAL 2">
+        <div class ="slds-var-m-around_medium">
+            <lightning-button
+            variant="Success"
+            label="Enter"
+            onclick={clickHandler}>
+
+            </lightning-button>
+            <template if:true={showData}>
+                <div class ="slds-var-m-top_small">
+                <strong> Name: </strong>{details.fullName}<br/>
+                <strong> Stay:</strong>{details.place}
+                </div>
+
+
+            </template>
+        </div>
+    </lightning-card>
+
+    
+</template>

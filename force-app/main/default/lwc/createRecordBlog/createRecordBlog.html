@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="CREATE BLOG FORM" icon-name="standard: blog">
+        <div class="slds-var-m-around_medium">
+            <form class="blogform">
+                <lightning-input label="Author Name" name="Author__c" onchange={changeHandler}></lightning-input>
+                <lightning-input label="Topic Name" name="Topic__c" onchange={changeHandler}></lightning-input>
+                <lightning-input label="Blog Title" name="Title__c" onchange={changeHandler}></lightning-input>
+                <lightning-input label="Blog Content" name="Body__c" onchange={changeHandler}></lightning-input>
+                <div class="slds-var-m-top_small slds-align_absolute-center">
+                    <lightning-button 
+                    label="Cancel"
+                    variant="neutral"
+                    class="slds-var-m-right_x-small"
+                    onclick={resetBlog}></lightning-button>
+
+                    <lightning-button
+                    label="Save Blog"
+                    variant="brand"
+                    onclick={saveBlog}></lightning-button>
+
+                </div>
+
+            </form>
+
+        </div>
+    </lightning-card>
+    
+</template>
